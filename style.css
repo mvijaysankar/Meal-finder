@@ -1,0 +1,360 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* ----navbar----  */
+.navbar {
+  background-color: #f04d24 !important;
+  ;
+  position: fixed;
+}
+
+.btn-close {
+  filter: invert(60%) sepia(100%) saturate(5000%) hue-rotate(-10deg) brightness(100%) contrast(100%);
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #f04d24 !important;
+}
+
+/*---bannar---- */
+#banner {
+  background: url(header_image.jpg) no-repeat center center/cover;
+  height: 400px;
+  color: #fff;
+  text-align: center;
+  position: sticky;
+}
+
+.search {
+  border-radius: 20px;
+  margin-top: 150px;
+  padding: 10px;
+  border: none;
+}
+
+#search2 {
+  background: #f04d24;
+  color: #fff;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+h2 {
+  font-family: "Glyphs";
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+/*---cards---- */
+
+#cat {
+  font-family: 'Times New Roman';
+  font-weight: bolder;
+  font-size: 25px;
+  text-decoration: underline #f04d24;
+}
+
+.categoryback {
+  background-color: #ede7e7;
+  width: 100%;
+  height: 550px;
+}
+
+#top {
+  position: absolute;
+  color: #fff;
+  font-size: 10px;
+  background-color: #f04d24;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-top: -110px;
+  margin-left: 80px;
+}
+
+#left {
+  margin-top: -100px;
+}
+
+
+/* ----meals--- */
+.img-container21 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+}
+
+.img-container21 div {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+
+
+}
+
+/* meals images */
+.img-container21 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin: 30px;
+}
+
+/*  meal card */
+.meal-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.meal-card img {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.meal-card h6 {
+  margin-top: 135px;
+  margin-left: -110px;
+  font-family: 'Times New Roman';
+}
+
+
+/*--- media quries----*/
+
+@media (max-width: 576px) {
+  .navbar {
+    font-size: 14px;
+  }
+
+  .card-body {
+    width: 30px;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: -40px;
+    margin: -40px;
+  }
+
+  .categoryback {
+    background-color: #ede7e7;
+    width: 100%;
+    height: 1500px;
+  }
+
+  #top {
+    margin-left: -10px;
+    font-size: 10px;
+  }
+
+  #banner {
+    height: 300px;
+    padding-top: 100px;
+  }
+
+  .search {
+    width: 80%;
+    margin-top: 100px;
+  }
+
+  #searchInput {
+    margin-top: -200px;
+    padding: 5px;
+    margin: 4px;
+    width: 200px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  #left {
+    margin-top: -50px;
+  }
+
+  .img-container21 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .single-meal-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .meal-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .meal-card {
+    margin-top: -80px;
+    padding: 5px;
+
+  }
+
+  .meal-details {
+    margin-left: 0;
+    font-size: 15px;
+
+  }
+
+  .meal-card h6 {
+    margin-top: 155px;
+    margin-left: -140px;
+    font-family: 'Times New Roman';
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .navbar {
+    font-size: 16px;
+  }
+
+  #banner {
+    height: 350px;
+  }
+
+  #top {
+    margin-top: -110px;
+    margin-left: 30px;
+  }
+ 
+  .search {
+    width: 50%;
+    margin-top: -500px;
+  }
+   #searchInput{
+    margin-top: 140px;
+   }
+  h2 {
+    font-size: 26px;
+  }
+
+  #left {
+    margin-top: -30px;
+  }
+
+  .categoryback {
+    height: auto;
+  }
+
+  .row {
+    padding: -100px;
+    margin: -100px;
+  }
+
+  .single-meal-info {
+    flex-direction: column;
+  }
+
+  .meal-image img {
+    width: 80%;
+    height: auto;
+  }
+
+  .meal-card {
+    margin-top: 40px;
+  }
+
+  .meal-details {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .img-container21 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 20px;
+    margin: 20px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .navbar {
+    font-size: 18px;
+  }
+
+  #banner {
+    height: 400px;
+  }
+
+  .search {
+    width: 60%;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  #left {
+    margin-top: -80px;
+  }
+
+  .categoryback {
+    height: auto;
+  }
+
+  .single-meal-info {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .meal-image img {
+    width: 90%;
+  }
+
+  .meal-details {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 993px) {
+  .navbar {
+    font-size: 20px;
+  }
+
+  #banner {
+    height: 450px;
+  }
+
+  .search {
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  #left {
+    margin-top: -100px;
+  }
+
+  .categoryback {
+    height: 550px;
+  }
+
+  .single-meal-info {
+    flex-direction: row;
+  }
+
+  .meal-image img {
+    width: 700px;
+    height: 500px;
+  }
+
+  .meal-details {
+    margin-left: 20px;
+  }
+}

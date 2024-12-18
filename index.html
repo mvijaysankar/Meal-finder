@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEALFinder</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+  <!-- nav bar--->
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: #fff;"><i class="fa-solid fa-house"></i> MEAL FINDER</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="Beef">Beef</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="Chicken">Chicken</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="Dessert">Dessert</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="Beef">Lamb</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="Chicken">Miscellaneous</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="Dessert">Pasta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="Beef">Pork</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="Chicken">Seafood</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="Dessert">Side</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="Beef">Starter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="Chicken">Vegan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="Dessert">Vegetarian</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="Beef">Breakfast</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-category="Chicken">Goat</a>
+            </li>
+              </li>
+            <li><a hreff="#"> &copy; Abhishek G B</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Banner Section -->
+  <div class="container text-center" id="banner">
+    <input type="search" id="searchInput" placeholder="Search recipes here" class="search">
+    <button id="searchButton" class="btn"><i class="fa-solid fa-magnifying-glass" id="search2"></i></button>
+    <h2>What are your favorite cuisines?</h2>
+    <p>PERSONALIZE YOUR EXPERIENCE</p>
+  </div>
+  <div id="full">
+    <div class="categoryback">
+      <div class="row p-5 m-3" id="cat">Category</div>
+        <div class="row justify-content-center p-5" id="left">
+          <div class="col-sm-2 mb-3">
+            <div class="card" style="border: none;">
+              <div class="card-body">
+                <div class="img-container" id="img1"></div>
+                <span id="top">BEEF</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 mb-3">
+            <div class="card" style="border: none;">
+              <div class="card-body">
+                <div class="img-container" id="img2"></div>
+                <span id="top">CHICKEN</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 mb-3">
+            <div class="card" style="border: none;">
+              <div class="card-body">
+                <div class="img-container" id="img3"></div>
+                <span id="top">DESSERT</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 mb-3">
+            <div class="card" style="border: none;">
+              <div class="card-body">
+                <div class="img-container" id="img4"></div>
+                <span id="top">LAMB</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 mb-3">
+            <div class="card" style="border: none;">
+              <div class="card-body">
+                <div class="img-container" id="img5"></div>
+                <span id="top">MISCELLANEOUS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center p-5" id="left">
+          <div class="col-sm-2 mb-3">
+            <div class="card" style="border: none;">
+              <div class="card-body">
+                <div class="img-container" id="img6"></div>
+                <span id="top">PASTA</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 mb-3">
+            <div class="card" style="border: none;">
+              <div class="card-body">
+                <div class="img-container" id="img7"></div>
+                <span id="top">PORK</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 mb-3">
+            <div class="card" style="border: none;">
+              <div class="card-body">
+                <div class="img-container" id="img8"></div>
+                <span id="top">SEAFOOD</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 mb-3">
+            <div class="card" style="border: none;">
+              <div class="card-body">
+                <div class="img-container" id="img9"></div>
+                <span id="top">SIDE</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 mb-3">
+            <div class="card" style="border: none;">
+              <div class="card-body">
+                <div class="img-container" id="img10"></div>
+                <span id="top">STARTER</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row p-5 justify-content-center" id="left">
+          <div class="col-sm-2 mb-3">
+            <div class="card" style="border: none;">
+              <div class="card-body">
+                <div class="img-container" id="img11"></div>
+                <span id="top">VEGAN</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 mb-3">
+            <div class="card" style="border: none;">
+              <div class="card-body">
+                <div class="img-container" id="img12"></div>
+                <span id="top">VEGETARIAN</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 mb-3">
+            <div class="card" style="border: none;">
+              <div class="card-body">
+                <div class="img-container" id="img13"></div>
+                <span id="top">BREAKFAST</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 mb-3">
+            <div class="card" style="border: none;">
+              <div class="card-body">
+                <div class="img-container" id="img14"></div>
+                <span id="top">GOAT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+  <!---meals--->
+  <div class="img-container21" id="img21"></div>
+
+  <!---meal details--->
+  <div class="box1"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
